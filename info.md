@@ -71,7 +71,6 @@ Pelilista on yksinkertainen verkkosovellus, jossa käyttäjät voivat luoda ja s
 
 - Koodi jaettu loogisiin osiin
 - Jokainen funktio kommentoitu suomeksi
-- README.md selittää projektin rakenteen
 - Ei turhaa koodia tai toistoa
 - Yksinkertainen, mutta laajennettavissa
 
