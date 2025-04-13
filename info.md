@@ -7,7 +7,7 @@
 
 ---
 
-## 🎯 Projektin kuvaus
+## Projektin kuvaus
 
 Pelilista on yksinkertainen verkkosovellus, jossa käyttäjät voivat luoda ja selata listoja suosikkipeleistään. Kukin peli sisältää nimen, alustan, julkaisuvuoden ja kuvauksen. Sovellus toimii mobiilissa ja tietokoneella, ja siinä on käyttöliittymä, jonka kautta pelit lisätään, haetaan ja poistetaan.
 
