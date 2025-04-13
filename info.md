@@ -1,4 +1,4 @@
-# Pelilista – Vaihe 2: Perusrunko ja päätoiminnallisuudet
+# Project Phase 2 – Basic Structure and Main Functionalities
 
 **Kurssi:** IT00AK35-3003 Web-kehittämisen jatkokurssi – Päivätoteutus  
 **Tekijät:** Janne Raappana ja Matias Nisula  
@@ -13,43 +13,86 @@ Pelilista on yksinkertainen verkkosovellus, jossa käyttäjät voivat luoda ja s
 
 ---
 
-## 🔧 Käytetyt teknologiat
+## 1. Environment
 
-| Osa-alue        | Teknologia              |
-|-----------------|-------------------------|
-| **Frontend**    | HTML, CSS, JavaScript   |
-| **Backend**     | Node.js + Express       |
-| **Tietokanta**  | SQLite (`games.db`)     |
-| **Tallennus**   | JSON API:llä välitetty |
-| **Projektinhallinta** | Git + GitHub      |
+- Paikallinen kone
+- Node.js ja SQLite asennettuna
+- Käytetty komentoriviä ja selainta testaukseen
 
 ---
 
-## ✅ Toteutetut toiminnallisuudet
+## 2. Backend
 
-- [x] Pelin lisääminen lomakkeella
-- [x] Pelien katselu listana
-- [x] Hakutoiminto
-- [x] Pelin yksityiskohtien katselu
-- [x] Pelin poistaminen
-- [x] Responsiivinen ulkoasu
-- [x] Kommentoitu ja siistitty koodi
-- [x] Tiedostojen jako GitHubissa
+- Node.js + Express -pohjainen palvelin
+- REST API-endpointit: GET, POST, DELETE
+- Palvelee JSON-muotoista dataa frontendille
 
 ---
 
-## 💡 Ympäristö ja arviointikriteerit (Vaihe 2)
+## 3. Frontend
 
-| Arvioitava kohta           | Toteutus                                              |
-|----------------------------|--------------------------------------------------------|
-| **Ympäristö**              | Paikallinen kone                                      |
-| **Backend**               | Node + Express                                        |
-| **Frontend**              | JavaScript ilman frameworkia                          |
-| **Tietokanta**            | SQLite                                                |
-| **Perusrunko**            | Selkeä, optimoitu ja dokumentoitu                     |
-| **Toiminnallisuudet**     | Kaikki määritellyt toiminnallisuudet toteutettu       |
-| **Koodin laatu**          | Hyvin organisoitu ja kattavasti kommentoitu           |
-| **Testaus ja virheenkäsittely** | Perustoiminnot testattu, virhetilanteita käsitelty |
-| **Käyttöliittymä**        | Käyttäjäystävällinen ja viimeistelty                  |
+- HTML + CSS + JavaScript (ei frameworkia)
+- Responsiivinen käyttöliittymä
+- Lomakkeet pelien lisäämiseen ja listojen selaamiseen
+- Hakutoiminto ja yksityiskohtien katselu
 
 ---
+
+## 4. Database
+
+- SQLite-pohjainen `games.db`
+- Taulu `games`, jossa kentät: id, name, platform, release, description
+- Data tallennetaan pysyvästi tietokantaan
+
+---
+
+## 5. Basic structure and architecture
+
+- Selkeä tiedostorakenne: `frontend/`, `backend/`, `db/`
+- Frontend ja backend eriytetty loogisesti
+- Moduulipohjainen rakenne
+- Kommentoitu ja dokumentoitu koodi
+
+---
+
+## 6. Functionalities
+
+- Pelin lisääminen lomakkeella
+- Pelien katselu listana
+- Hakutoiminto (filtteröinti nimellä)
+- Yksittäisen pelin tietojen tarkastelu
+- Pelin poistaminen
+- Lomakkeen piilotus/näyttö
+- Dynaaminen lista frontendissä
+
+---
+
+## 7. Code quality and documentation
+
+- Koodi jaettu loogisiin osiin
+- Jokainen funktio kommentoitu suomeksi
+- README.md selittää projektin rakenteen
+- Ei turhaa koodia tai toistoa
+- Yksinkertainen, mutta laajennettavissa
+
+---
+
+## 8. Testing and error handling
+
+- Kaikki päätoiminnot testattu manuaalisesti
+- Virheenkäsittelyä mm. tyhjissä kentissä
+- Backend tarkistaa POST-pyynnön datan
+- Ei kaatumisia väärällä syötteellä
+
+---
+
+## 9. User interface and interaction
+
+- Yksinkertainen ja selkeä käyttöliittymä
+- Toimii hyvin sekä tietokoneella että puhelimella
+- Käyttäjä näkee pelit heti ja voi lisätä uusia
+- Lomake on piilotettavissa → siisti näkymä
+- Kaikki käyttöliittymän toiminnot helposti löydettävissä
+
+---
+
